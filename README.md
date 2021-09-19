@@ -1,5 +1,6 @@
-# V.01.1
+# V.01
 Atlikti darbai:
+# V.01.1
 1) Sukurta struktūra "Studentas"
 2) Sukurta void f-ja nuskaitymui "Input"
 3) Sukurta void f-ja išrašymui "Output"
