@@ -8,3 +8,6 @@ Atlikti darbai:
 # V.01.2
 1) Sukurta double f-ja "Balas", priklausomai nuo vartotojo noro skaičiuojanti galutinius balus pagal medianą arba pagal vidurkį
 2) Sukurta void f-ja "Rikiavimas". Naudojama tik tuo atveju, jei vartotojas nori sužinoti medianinius įverčius
+# V.01.3
+1) Programa pritakyta atvejams, kai vartotojas tiksliai nežino kiek namų darbų įverčių įrašys
+2) Pakeistos f-jos, kad tiktų naudoti su vektorių tipo kintamaisiais
