@@ -8,7 +8,7 @@ struct studentas
     std::string vardas;
     std::string pavarde;
     int n;
-    int nd[100];
+    double nd[100];
     int egz;
     double nd_suma;
     double galutinis;
@@ -16,6 +16,8 @@ struct studentas
 
 void input(studentas stud[], int& kiek);
 void output(studentas stud[], int& kiek);
+double balas(string tipas, studentas stud);
+void rikiavimas(double mas[], int& kiek);
 
 int main()
 {
@@ -46,7 +48,12 @@ void input(studentas stud[], int& kiek)
             stud[j].nd_suma += stud[j].nd[i];
         }
         cout << "Egzamino ivertinimas : "; cin >> stud[j].egz; cout << endl;
-        stud[j].galutinis = 0.4 * (stud[j].nd_suma / stud[j].n) + 0.6 * stud[j].egz;
+    }
+    string noras;
+    cout << "Noretumete gauti medianinius (spausti M) ar vidurkinius (spausti V) ivertinimus? "; cin >> noras;
+    for (int i = 0; i < kiek; i++)
+    {
+        stud[i].galutinis = balas(noras, stud[i]);
     }
 }
 
@@ -58,5 +65,36 @@ void output(studentas stud[], int& kiek)
     for (int i = 0; i < kiek; i++)
     {
         cout << setw(20) << left << stud[i].pavarde << "\t" << setw(10) << stud[i].vardas << "\t" << fixed << setprecision(2) << stud[i].galutinis << endl;
+    }
+}
+
+double balas(std::string tipas, studentas stud)
+{
+    if (tipas == "V")
+    {
+        return 0.4 * (stud.nd_suma / stud.n) + 0.6 * stud.egz;
+    }
+    else if (tipas == "M")
+    {
+        rikiavimas(stud.nd, stud.n);
+        int vid = stud.n;
+        if (vid % 2 != 0) { return stud.nd[vid / 2] * 0.4 + stud.egz * 0.6; }
+        else { return (stud.nd[vid / 2] + stud.nd[vid / 2 - 1]) / 2 * 0.4 + 0.6 * stud.egz; }
+    }
+}
+
+void rikiavimas(double mas[], int& kiek)
+{
+    for (int i = 0; i < kiek - 1; i++)
+    {
+        for (int y = i + 1; y < kiek; y++)
+        {
+            if (mas[i] > mas[y])
+            {
+                int keit = mas[i];
+                mas[i] = mas[y];
+                mas[y] = keit;
+            }
+        }
     }
 }
