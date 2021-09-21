@@ -26,6 +26,7 @@ int main()
     int st;
     std::cout << "Studentu skaicius : ";
     std::cin >> st;
+    if (st <= 0) { throw std::invalid_argument("Programa neturi prasmes!"); }
     vector <studentas> grupe;
     grupe.reserve(st);
     input(grupe, st);
@@ -40,6 +41,8 @@ void input(vector <studentas>& stu, int& kiek)
     {
         cout << "Studento vardas : "; cin >> laikinas.vardas;
         cout << "Studento pavarde : "; cin >> laikinas.pavarde;
+        for (const char r : laikinas.vardas) { if (isdigit(r)) { throw std::invalid_argument("Varde negali buti skaiciaus! "); } }
+        for (const char r : laikinas.pavarde) { if (isdigit(r)) { throw std::invalid_argument("Pavardeje negali buti skaiciaus!"); } }
         string darbas;
         cout << "Studento ivertinimai zinomi (spausti Z) ar generuoti juos atsitiktinai (spausti A)? "; cin >> darbas;
         if (darbas == "Z")
@@ -48,11 +51,14 @@ void input(vector <studentas>& stu, int& kiek)
             double tarp;
             while (cin >> tarp)
             {
+                if (tarp > 10 || tarp < 0) { throw std::invalid_argument("Ivesta negalima reiksme!"); }
                 laikinas.nd.push_back(tarp);
             }
             cin.clear();
             cin.ignore(10000, '\n');
+            if (laikinas.nd.size() == 0) { throw "Privalo buti bent vienas pazymys!"; }
             cout << "Egzamino ivertinimas : "; cin >> laikinas.egz; cout << endl;
+            if (laikinas.egz > 10 || laikinas.egz < 0) { throw std::invalid_argument("Ivesta negalima reiksme!"); }
             stu.push_back(laikinas);
             laikinas.nd.clear();
         }
@@ -61,6 +67,7 @@ void input(vector <studentas>& stu, int& kiek)
         {
             int ndd;
             cout << "Namu darbu kiekis: "; cin >> ndd;
+            if (ndd <= 0) { throw std::invalid_argument("Privalo buti bent vienas pazymys!"); }
             srand(time(0));
             for (int i = 0; i < ndd; i++)
             {
@@ -76,6 +83,10 @@ void input(vector <studentas>& stu, int& kiek)
             laikinas.egz = egzz;
             stu.push_back(laikinas);
             laikinas.nd.clear();
+        }
+        else
+        {
+            throw std::invalid_argument("Nepasirinktas joks pazymiu generavimo budas!");
         }
         
     }
@@ -113,6 +124,10 @@ void balas(std::string tipas, vector <studentas>& stud)
             int vid = laikinas.nd.size();
             if (vid % 2 != 0) { laikinas.galutinis = laikinas.nd[vid / 2] * 0.4 + laikinas.egz * 0.6; }
             else { laikinas.galutinis = (laikinas.nd[vid / 2] + laikinas.nd[vid / 2 - 1]) / 2 * 0.4 + 0.6 * laikinas.egz; }
+        }
+        else
+        {
+            throw std::invalid_argument("Nepasirinktas joks ivertinimo skaiciavimo variantas!");
         }
         stud[i] = laikinas;
     }
