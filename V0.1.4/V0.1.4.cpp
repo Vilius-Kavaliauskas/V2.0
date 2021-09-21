@@ -52,7 +52,6 @@ void input(vector <studentas>& stu, int& kiek)
             }
             cin.clear();
             cin.ignore(10000, '\n');
-            cout << laikinas.nd.size() << endl;
             cout << "Egzamino ivertinimas : "; cin >> laikinas.egz; cout << endl;
             stu.push_back(laikinas);
             laikinas.nd.clear();
