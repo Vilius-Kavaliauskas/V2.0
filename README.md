@@ -13,3 +13,4 @@ Atlikti darbai:
 2) Pakeistos f-jos, kad tiktų naudoti su vektorių tipo kintamaisiais
 # V.01.4
 1) Įtraukta galimybė, jog kompiuteris generuotų pažymius pats, o ne tik pasiimtų iš vartotojo
+2) Pridėti ribojimai įvedamiems duomenims
