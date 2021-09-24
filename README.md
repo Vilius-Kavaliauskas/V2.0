@@ -1,5 +1,6 @@
-# V.01.1
+# V.01
 Atlikti darbai:
+# V.01.1
 1) Sukurta struktūra "Studentas"
 2) Sukurta void f-ja nuskaitymui "Input"
 3) Sukurta void f-ja išrašymui "Output"
@@ -9,10 +10,8 @@ Atlikti darbai:
 2) Sukurta void f-ja "Rikiavimas". Naudojama tik tuo atveju, jei vartotojas nori sužinoti medianinius įverčius
 # V.01.3
 1) Programa pritakyta atvejams, kai vartotojas tiksliai nežino kiek namų darbų įverčių įrašys
-) Pakeistos f-jos, kad tiktų naudoti su vektorių tipo kintamaisiais
+2) Pakeistos f-jos, kad tiktų naudoti su vektorių tipo kintamaisiais
 # V.01.4
 1) Įtraukta galimybė, jog kompiuteris generuotų pažymius pats, o ne tik pasiimtų iš vartotojo
 2) Pridėti ribojimai įvedamiems duomenims
-# V.02
-1) Pridėta galimybė nuskaityti duomenis iš failo
-2) Patobulintas skaičių generavimas
+
