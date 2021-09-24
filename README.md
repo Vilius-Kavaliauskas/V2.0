@@ -1,4 +1,4 @@
-# V0.1
+# V0.2
 Atlikti darbai:
 # V0.1.1
 1) Sukurta struktūra "Studentas"
@@ -14,3 +14,6 @@ Atlikti darbai:
 # V0.1.4
 1) Įtraukta galimybė, jog kompiuteris generuotų pažymius pats, o ne tik pasiimtų iš vartotojo
 2) Pridėti ribojimai įvedamiems duomenims
+# V0.2
+1) Pridėta galimybė nuskaityti duomenis iš failo
+2) Patobulintas skaičių generavimas
