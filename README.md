@@ -14,3 +14,7 @@ Atlikti darbai:
 # V0.1.4
 1) Įtraukta galimybė, jog kompiuteris generuotų pažymius pats, o ne tik pasiimtų iš vartotojo
 2) Pridėti ribojimai įvedamiems duomenims
+# V.01.4(dinaminis masyvas)
+1) Vietoj vektoriaus naudotas dinaminis masyvas
+2) Neveikia rikiavimo f-ja, padaryti, kad būtų galima įtraukti namų darbus nežinant jų kiekio nepavy
+
