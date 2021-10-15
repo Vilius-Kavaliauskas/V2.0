@@ -1,4 +1,4 @@
-# V0.2
+# V0.3
 Atlikti darbai:
 # V0.1.1
 1) Sukurta struktūra "Studentas"
@@ -17,3 +17,6 @@ Atlikti darbai:
 # V0.2
 1) Pridėta galimybė nuskaityti duomenis iš failo
 2) Patobulintas skaičių generavimas
+# V0.3
+1) Naudojamos f-jos ir struktūros sukeltos į atskirus .cpp/.h failus
+2) Kur reikia, naudojamas try-catch išimčių valdymui
