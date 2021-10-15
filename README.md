@@ -1,4 +1,4 @@
-# V0.3
+# V0.4
 Atlikti darbai:
 # V0.1.1
 1) Sukurta struktūra "Studentas"
@@ -20,3 +20,6 @@ Atlikti darbai:
 # V0.3
 1) Naudojamos f-jos ir struktūros sukeltos į atskirus .cpp/.h failus
 2) Kur reikia, naudojamas try-catch išimčių valdymui
+# V0.4
+1) Vartotojui suteikta galimybė pasirinkti, kad programa sugeneruotų vieno iš pasirinktų didumų failą
+2) Įtraukta laiko skaičiavimo klasė, pateikianti atskirų veiksmų vykdymo trukmę

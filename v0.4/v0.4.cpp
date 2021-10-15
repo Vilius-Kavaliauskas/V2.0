@@ -12,8 +12,9 @@
 #include <chrono>
 #include "Studentas.h"
 #include "Input.h"
-#include "Balas.h"
 #include "Output.h"
+#include "Generavimas.h"
+#include "Laikas.h"
 
 using namespace std;
 
@@ -23,17 +24,21 @@ int main()
 
     try
     {
-    cout << "Duomenys faile (spausti F) ar rasysite juos pats (spausti R)? "; cin >> rasymas;
+        cout << "Duomenys faile (spausti F) ar rasysite juos pats (spausti R)? "; cin >> rasymas;
         if (rasymas != "F" && rasymas != "R")
         {
             throw (rasymas);
         }
-    }catch (string rasymas)
+    }
+    catch (string rasymas)
     {
         cout << "Nesuprastas nurodymas" << endl;
     }
-    
+
+    cout << endl;
+
     vector <studentas> grupe;
     input(grupe, rasymas);
     output(grupe);
+    grupe.clear();
 }

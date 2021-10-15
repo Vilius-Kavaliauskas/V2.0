@@ -25,8 +25,18 @@ void input(std::vector <studentas>& stu, std::string ras)
         studentas laikinas;
         std::cout << "Studentu skaicius : ";
         int st;
-        std::cin >> st;
-
+        try
+        {
+            std::cin >> st;
+            if (!isdigit(st) || st < 0)
+            {
+                throw (st);
+            }
+        }catch (int st)
+        {
+            cout << "Nesuprastas nurodymas" << endl;
+        }
+        
         stu.reserve(st);
         for (int j = 0; j < st; j++)
         {
@@ -60,7 +70,7 @@ void input(std::vector <studentas>& stu, std::string ras)
                 cin.clear();
                 cin.ignore(10000, '\n');
 
-                cout << "Egzamino ivertinimas : ";
+                cout << "Egzamino ivertinimas : "; 
                 try {
                     cin >> laikinas.egz;
                     if (isalpha(laikinas.egz) || laikinas.egz > 10 || laikinas.egz < 0)
@@ -107,12 +117,10 @@ void input(std::vector <studentas>& stu, std::string ras)
         }
     }
 
-
-
-
     else if (ras == "F")
     {
         std::ifstream IN, INN;
+
         try {
             IN.open("kursiokai.txt", std::ios::in);
             if (!IN)
@@ -157,22 +165,21 @@ void input(std::vector <studentas>& stu, std::string ras)
             laikinas.nd.clear();
         }
         INN.close();
-
-
-        string noras;
-        cout << "Noretumete gauti medianinius (spausti M) ar vidurkinius (spausti V) ivertinimus? ";
-        try {
-            cin >> noras;
-            if (noras != "M" && noras != "V")
-            {
-                throw (noras);
-            }
-        }
-        catch (string noras)
-        {
-            cout << "Nurodymas nesuprastas" << endl;
-        }
-
-        balas(noras, stu);
     }
+
+    string noras;
+    cout << "Noretumete gauti medianinius (spausti M) ar vidurkinius (spausti V) ivertinimus? "; 
+    try {
+        cin >> noras;
+        if (noras != "M" && noras != "V")
+        {
+            throw (noras);
+        }
+    }
+    catch (string noras)
+    {
+        cout << "Nurodymas nesuprastas" << endl;
+    }
+
+    balas(noras, stu);
 }
