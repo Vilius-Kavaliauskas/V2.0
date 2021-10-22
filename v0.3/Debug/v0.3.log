@@ -1,0 +1,10 @@
+﻿  Balas.cpp
+  Input.cpp
+C:\Users\kavav\Documents\OBJEKTINIS PROGRAMAVIMAS C++\v0.3\v0.3\Input.cpp(141,18): warning C4018: '<': signed/unsigned mismatch
+C:\Users\kavav\Documents\OBJEKTINIS PROGRAMAVIMAS C++\v0.3\v0.3\Input.cpp(35,21): warning C4101: 'st': unreferenced local variable
+C:\Users\kavav\Documents\OBJEKTINIS PROGRAMAVIMAS C++\v0.3\v0.3\Input.cpp(81,28): warning C4101: 'egz': unreferenced local variable
+  Output.cpp
+C:\Users\kavav\Documents\OBJEKTINIS PROGRAMAVIMAS C++\v0.3\v0.3\Output.cpp(14,23): warning C4018: '<': signed/unsigned mismatch
+  v0.3.cpp
+  Generating Code...
+  v0.3.vcxproj -> C:\Users\kavav\Documents\OBJEKTINIS PROGRAMAVIMAS C++\v0.3\Debug\v0.3.exe
