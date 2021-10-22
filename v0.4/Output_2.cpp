@@ -21,7 +21,7 @@ void output(std::vector <studentas> stu)
         if (stu[i].galutinis > 5) { GERI << setw(20) << left << stu[i].pavarde << setw(20) << left << stu[i].vardas << fixed << setprecision(2) << stu[i].galutinis << endl; }
         else if (stu[i].galutinis <= 5) { BLOGI << setw(20) << left << stu[i].pavarde << setw(20) << left << stu[i].vardas << fixed << setprecision(2) << stu[i].galutinis << endl; }
     }
-    cout << "Studentai surusiuoti ir isspausdinti per: " << skirstom.elapsed() << "s." << endl;
+    cout << endl << "Studentai surusiuoti ir isspausdinti per: " << skirstom.elapsed() << "s." << endl;
     GERI.close();
     BLOGI.close();
 }

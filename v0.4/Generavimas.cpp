@@ -19,7 +19,7 @@ void generuok(int kiek_paz, int stud_kiek)
 	double studentu_kiekis = pow(10, stud_kiek);
 
 	OUT << setw(20) << left << "Vardas" << setw(20) << left << "Pavarde";
-	for (int j = 1; j <= kiek_paz; j++) { OUT << "ND" + to_string(j) << '/t'; }
+	for (int j = 1; j <= kiek_paz; j++) { OUT << "ND" + to_string(j) << ' '; }
 	OUT << "Egz." << endl;
 
 	for (int i = 1; i <= studentu_kiekis; i++)

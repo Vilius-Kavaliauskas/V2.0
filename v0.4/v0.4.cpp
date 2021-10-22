@@ -22,22 +22,11 @@ int main()
 {
     string rasymas;
 
-    try
-    {
-        cout << "Duomenys faile (spausti F) ar rasysite juos pats (spausti R)? "; cin >> rasymas;
-        if (rasymas != "F" && rasymas != "R")
-        {
-            throw (rasymas);
-        }
-    }
-    catch (string rasymas)
-    {
-        cout << "Nesuprastas nurodymas" << endl;
-    }
-
+    cout << "Duomenys faile (spausti F) ar rasysite juos pats (spausti R)? "; cin >> rasymas;
     cout << endl;
 
     vector <studentas> grupe;
+
     input(grupe, rasymas);
     output(grupe);
     grupe.clear();
