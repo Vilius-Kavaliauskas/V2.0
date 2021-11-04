@@ -28,7 +28,7 @@ Ištirtas programos greitis priklausomai nuo naudojamo konteinerio (vector arba 
 
 |                   | List    | Vector  |
 | -------------     |:------: | -----:  |
-| ~`000`            |         |         |
+| `1000`            |         |         |
 | Failo nuskaitymas | 0,049s.	|	0,046s. |
 | Skirstymas        | 0,032s.	|	0,014s. |
 | `10000`           |         |         |
