@@ -29,17 +29,17 @@ Ištirtas programos greitis priklausomai nuo naudojamo konteinerio (vector arba 
 |                   | List    | Vector  |
 | -------------     |:------: | -----:  |
 | `1000`            |         |         |
-| Failo nuskaitymas | 0,049s.	|	0,046s. |
-| Skirstymas        | 0,032s.	|	0,014s. |
+| Failo nuskaitymas | 0,034s.	|	0,023s. |
+| Skirstymas        | 0,008s.	|	0,008s. |
 | `10000`           |         |         |
-| Failo nuskaitymas | 0,498s.	|	0,465s. |
-| Skirstymas        | 0,309s.	|	0,138s. |
+| Failo nuskaitymas | 0,853s.	|	0,474s. |
+| Skirstymas        | 0,217s.	|	0,214s. |
 | `100000`          |         |         |
-| Failo nuskaitymas | 5,37s.	|	4,792s. |
-| Skirstymas        | 3,089s.	|	1,415s. |
+| Failo nuskaitymas | 8.516s.	|	4.868s. |
+| Skirstymas        | 2.142s.	|	2.096s. |
 | `1000000`         |         |         |
-| Failo nuskaitymas | 52,701s.|	47,279s.|
-| Skirstymas        | 30,519s.|	14.26s. |
+| Failo nuskaitymas | 87.955s.|	51.563s.|
+| Skirstymas        | 21.46s. |	21.315s. |
 
 PASTABOS
 1) Namų darbų kiekis pastovus - 8
