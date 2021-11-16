@@ -29,17 +29,25 @@ Ištirtas programos greitis priklausomai nuo naudojamo konteinerio (vector arba 
 |                   | List    | Vector  |
 | -------------     |:------: | -----:  |
 | `1000`            |         |         |
-| Failo nuskaitymas | 0,034s.	|	0,023s. |
-| Skirstymas        | 0,008s.	|	0,008s. |
-| `10000`           |         |         |
-| Failo nuskaitymas | 0,853s.	|	0,474s. |
-| Skirstymas        | 0,217s.	|	0,214s. |
+| Failo nuskaitymas | 0,0035s.|	0,029s. |
+| Skirstymas        | 0,005s.	|	0,005s. |
+| Iš viso           | 0,009s. | 0,035s. |
+|`10000`            |         |         |
+| Failo nuskaitymas | 0,032s.	|	0,032.  |
+| Skirstymas        | 0,05s.	|	0,05s.  |
+| Iš viso           | 0,08s.  | 0,08s.  |
 | `100000`          |         |         |
-| Failo nuskaitymas | 8.516s.	|	4.868s. |
-| Skirstymas        | 2.142s.	|	2.096s. |
+| Failo nuskaitymas | 0.31s.	|	0,74s.  |
+| Skirstymas        | 0.51s.	|	0,49s.  |
+| Iš viso           | 0,82s.  | 1,23s.  |
 | `1000000`         |         |         |
-| Failo nuskaitymas | 87.955s.|	51.563s.|
-| Skirstymas        | 21.46s. |	21.315s. |
+| Failo nuskaitymas | 3.1s.   |	3,01s.  |
+| Skirstymas        | 4,96s.  |	4,93s.  |
+| Iš viso           | 8,07s.  | 7,94s.  |
+| `10000000`        |         |         |
+| Failo nuskaitymas | 79,1s.  |	53,65s. |
+| Skirstymas        | 628,2s. |	61,2s.  |
+| Iš viso           | 707,3s. | 114,9s. |
 
 PASTABOS
 1) Namų darbų kiekis pastovus - 8
