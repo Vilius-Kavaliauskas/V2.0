@@ -1,4 +1,4 @@
-# V0.5
+# V1.0
 Atlikti darbai:
 # V0.1.1
 1) Sukurta struktūra "Studentas"
@@ -58,3 +58,34 @@ TESTAVIMO SISTEMOS CHARAKTERISTIKOS
 1) CPU: 4 Core(s), 8 Logical Processor(s)
 2) RAM: 8GB
 3) HDD: 929GB
+
+#V1.0
+Abiems konteinerių tipams išmėginti kitokie studentų skirstymo metodai. Gauti tokie rezultatai:
+|                         | List    | Vector  |
+| -------------           |:------: | -----:  |
+| `1000`                  |         |         |
+| Failo nuskaitymas       | 0,0035s.|	0,029s. |
+| Skirstymas              | 0,005s.	|	0,005s. |
+| Skirstymas kopijuojant  |||
+| Skirstymas trinant      |||
+| `10000`                 |         |         |
+| Failo nuskaitymas       | 0,0035s.|	0,029s. |
+| Skirstymas              | 0,005s.	|	0,005s. |
+| Skirstymas kopijuojant  |||
+| Skirstymas trinant      |||
+| `100000`                |         |         |
+| Failo nuskaitymas       | 0,0035s.|	0,029s. |
+| Skirstymas              | 0,005s.	|	0,005s. |
+| Skirstymas kopijuojant  |||
+| Skirstymas trinant      |||
+| `1000000`               |         |         |
+| Failo nuskaitymas       | 0,0035s.|	0,029s. |
+| Skirstymas              | 0,005s.	|	0,005s. |
+| Skirstymas kopijuojant  |||
+| Skirstymas trinant      |||
+| `10000000`              |         |         |
+| Failo nuskaitymas       | 0,0035s.|	0,029s. |
+| Skirstymas              | 0,005s.	|	0,005s. |
+| Skirstymas kopijuojant  |||
+| Skirstymas trinant      |||
+
