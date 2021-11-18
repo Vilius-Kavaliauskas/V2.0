@@ -59,7 +59,7 @@ TESTAVIMO SISTEMOS CHARAKTERISTIKOS
 2) RAM: 8GB
 3) HDD: 929GB
 
-#V1.0
+# V1.0
 Abiems konteinerių tipams išmėginti kitokie studentų skirstymo metodai. Gauti tokie rezultatai (namuų darbų kiekis ir galutinis balas - kaip V0.5 versijoje):
 |                         | List    | Vector  |
 | -------------           |:------: | -----:  |
