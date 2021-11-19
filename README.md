@@ -83,4 +83,3 @@ Abiems konteinerių tipams išmėginti kitokie studentų skirstymo metodai. Gaut
 | Skirstymas              | 54,51s. |	56,05s. |
 | Skirstymas kopijuojant  | 211,36s.| 199,296s.|
 | Skirstymas trinant      | 68,303s.| 137,74s.|
-
