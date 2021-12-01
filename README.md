@@ -1,19 +1,16 @@
-# V1.0
+# V1.1
 Atlikti darbai:
-# V0.1.1
+# V0.1
 1) Sukurta struktūra "Studentas"
 2) Sukurta void f-ja nuskaitymui "Input"
 3) Sukurta void f-ja išrašymui "Output"
 4) Galutinis rezultatas skaičiuojamas pagal vidurkį
-# V0.1.2
-1) Sukurta double f-ja "Balas", priklausomai nuo vartotojo noro skaičiuojanti galutinius balus pagal medianą arba pagal vidurkį
-2) Sukurta void f-ja "Rikiavimas". Naudojama tik tuo atveju, jei vartotojas nori sužinoti medianinius įverčius
-# V0.1.3
-1) Programa pritakyta atvejams, kai vartotojas tiksliai nežino kiek namų darbų įverčių įrašys
-2) Pakeistos f-jos, kad tiktų naudoti su vektorių tipo kintamaisiais
-# V0.1.4
-1) Įtraukta galimybė, jog kompiuteris generuotų pažymius pats, o ne tik pasiimtų iš vartotojo
-2) Pridėti ribojimai įvedamiems duomenims
+5) Sukurta double f-ja "Balas", priklausomai nuo vartotojo noro skaičiuojanti galutinius balus pagal medianą arba pagal vidurkį
+6) Sukurta void f-ja "Rikiavimas". Naudojama tik tuo atveju, jei vartotojas nori sužinoti medianinius įverčius
+7) Programa pritakyta atvejams, kai vartotojas tiksliai nežino kiek namų darbų įverčių įrašys
+8) Pakeistos f-jos, kad tiktų naudoti su vektorių tipo kintamaisiais
+9) Įtraukta galimybė, jog kompiuteris generuotų pažymius pats, o ne tik pasiimtų iš vartotojo
+10) Pridėti ribojimai įvedamiems duomenims
 # V0.2
 1) Pridėta galimybė nuskaityti duomenis iš failo
 2) Patobulintas skaičių generavimas
@@ -83,3 +80,23 @@ Abiems konteinerių tipams išmėginti kitokie studentų skirstymo metodai. Gaut
 | Skirstymas              | 54,51s. |	56,05s. |
 | Skirstymas kopijuojant  | 211,36s.| 199,296s.|
 | Skirstymas trinant      | 68,303s.| 137,74s.|
+
+# V1.1
+Sukurta `klasė` Studentas. Keičiant optimizacijos strategiją, palyginta programos veikimo sparta su senąja `struktūra`, naudojant fiksuotą konteinerį - `vector` bei skirstymą trinant.
+|  `100000`   | KLASĖ   | STRUKTŪRA |
+| ------------|:------: | -----:  |
+| O1          |        	|	        |
+| Nuskaitymas | 0,355s. | 0,389s. |
+| Skirstymas  | 0,812s. | 0,653s. |
+| 02          |         |         |
+| Nuskaitymas | 0,375s.	|	0,361s. |
+| Skirstymas  | 0,761s. | 0,6s.   |
+
+|  `1000000`  | KLASĖ   | STRUKTŪRA |
+| ------------|:------: | -----:  |
+| O1          |        	|	        |
+| Nuskaitymas | 4s.     | 3,56s.  |
+| Skirstymas  | 7,278s. | 6,474s. |
+| 02          |         |         |
+| Nuskaitymas | 3,402s.	|	3,517s. |
+| Skirstymas  | 7,37s.  | 6,176s. |
