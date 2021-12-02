@@ -1,4 +1,4 @@
-# V1.1
+# V1.2
 Atlikti darbai:
 # V0.1
 1) Sukurta struktūra "Studentas"
@@ -100,3 +100,6 @@ Sukurta `klasė` Studentas. Keičiant optimizacijos strategiją, palyginta progr
 | 02          |         |         |
 | Nuskaitymas | 3,402s.	|	3,517s. |
 | Skirstymas  | 7,37s.  | 6,176s. |
+
+# V1.2
+`klasė` Studentas patobulinta atsižvelgiant į 'trijų taisyklę'.
