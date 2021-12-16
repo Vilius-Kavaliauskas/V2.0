@@ -1,4 +1,4 @@
-# V1.5
+# V2.0
 Atlikti darbai:
 # V0.1
 1) Sukurta struktūra "Studentas"
@@ -106,3 +106,6 @@ Sukurta `klasė` Studentas. Keičiant optimizacijos strategiją, palyginta progr
 
 # V1.5
 Sukurta bazinė `klasė` Asmuo, iš kurios Studentas paveldi vardą ir pavardę.
+
+# V2.0
+Sukurta doxygen dokumentacija.
