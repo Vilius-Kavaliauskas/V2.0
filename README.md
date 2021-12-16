@@ -1,4 +1,4 @@
-# V1.2
+# V1.5
 Atlikti darbai:
 # V0.1
 1) Sukurta struktūra "Studentas"
@@ -103,3 +103,6 @@ Sukurta `klasė` Studentas. Keičiant optimizacijos strategiją, palyginta progr
 
 # V1.2
 `klasė` Studentas patobulinta atsižvelgiant į 'trijų taisyklę'.
+
+# V1.5
+Sukurta bazinė `klasė` Asmuo, iš kurios Studentas paveldi vardą ir pavardę.
