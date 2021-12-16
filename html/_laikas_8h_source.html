@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Viliaus Kavaliausko (DM2k1gr) objektinio programavimo projektas: Laikas.h išeities tekstas</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Viliaus Kavaliausko (DM2k1gr) objektinio programavimo projektas<span id="projectnumber">&#160;V2.0</span>
+   </div>
+   <div id="projectbrief">Susipažinimas su bazinėmis klasėmis ir doxygen dokumentacija</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Sugeneruota Doxygen 1.9.2 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',false,false,'search.php','Paieška');
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Laikas.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_laikas_8h.html">Eiti į šio failo dokumentaciją.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef  LAIKAS_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define LAIKAS_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;chrono&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="classlaikas.html">    6</a></span><span class="keyword">class </span><a class="code hl_class" href="classlaikas.html">laikas</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">using</span> hrClock = std::chrono::high_resolution_clock;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">using</span> durationDouble = std::chrono::duration&lt;double&gt;;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    std::chrono::time_point&lt;hrClock&gt; start;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classlaikas.html#a9a44e9667ea13051da14853931b53dc8">   13</a></span>    <a class="code hl_function" href="classlaikas.html#a9a44e9667ea13051da14853931b53dc8">laikas</a>() : start{ hrClock::now() } {}</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classlaikas.html#a1bd2243ac55dc553b1a21ff7204ce255">   16</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classlaikas.html#a1bd2243ac55dc553b1a21ff7204ce255">reset</a>() {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        start = hrClock::now();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    }</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classlaikas.html#a4dc17101ff5a5d9cb815e4b921fb8f9e">   21</a></span>    <span class="keywordtype">double</span> <a class="code hl_function" href="classlaikas.html#a4dc17101ff5a5d9cb815e4b921fb8f9e">elapsed</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keywordflow">return</span> durationDouble(hrClock::now() - start).count();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    }</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#endif </span><span class="comment">// ! LAIKAS_H</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="ttc" id="aclasslaikas_html"><div class="ttname"><a href="classlaikas.html">laikas</a></div><div class="ttdoc">Laikmacio funkcija.</div><div class="ttdef"><b>Definition:</b> Laikas.h:6</div></div>
+<div class="ttc" id="aclasslaikas_html_a1bd2243ac55dc553b1a21ff7204ce255"><div class="ttname"><a href="classlaikas.html#a1bd2243ac55dc553b1a21ff7204ce255">laikas::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdoc">Laikamcio atstatymas.</div><div class="ttdef"><b>Definition:</b> Laikas.h:16</div></div>
+<div class="ttc" id="aclasslaikas_html_a4dc17101ff5a5d9cb815e4b921fb8f9e"><div class="ttname"><a href="classlaikas.html#a4dc17101ff5a5d9cb815e4b921fb8f9e">laikas::elapsed</a></div><div class="ttdeci">double elapsed() const</div><div class="ttdoc">Rezultato spausdinimo funkcija.</div><div class="ttdef"><b>Definition:</b> Laikas.h:21</div></div>
+<div class="ttc" id="aclasslaikas_html_a9a44e9667ea13051da14853931b53dc8"><div class="ttname"><a href="classlaikas.html#a9a44e9667ea13051da14853931b53dc8">laikas::laikas</a></div><div class="ttdeci">laikas()</div><div class="ttdoc">Konstruktorius, su kuriuo pagal nutylejima paleidziamas laikmatis.</div><div class="ttdef"><b>Definition:</b> Laikas.h:13</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Sugeneruota&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>
